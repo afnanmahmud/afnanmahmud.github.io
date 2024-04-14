@@ -23,24 +23,24 @@
     <!-- I used a youtube video and w3schools website for this part -->
     
     <div class = "formTitles">
-        <form id="contactForm"> 
+        <form method='post', action='/submit-form', enctype='application/x-www-form-urlencoded' id="contactForm"> 
             <div>
                 <label for="name">Name</label><br>
-                <input id="name" name="name" type="text">
+                <input id="name" name="name" type="text" required>
             </div>
             <br>
             <div>
                 <label for="email">Email Address</label><br>
-                <input id="email" name="email" type="text">
+                <input id="email" name="email" type="text" required>
             </div>
             <br>
             <div>
                 <label for="message">Message</label>
                 <br>
-                <textarea id="message" name="message" type="text"></textarea>
+                <textarea id="message" name="message" type="text" required></textarea>
                 <br>
             </div>
-            <input type="submit" value="Submit">
+            <input type="submit">
             
         </form>
     </div>
@@ -51,38 +51,4 @@
 
 
 </body>
-
-<!-- implementing basic javascript using form validation -->
-<script>
-    const name = document.getElementById('name')
-    const email = document.getElementById('email')
-    const form = document.getElementById('contactForm')
-    const message = document.getElementById('message');
-    const errorText = document.getElementById("error-text");
-    window.onload = function() {
-        form.addEventListener("submit", (e) => handleSubmit(e))
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-
-        isInvalid = false;
-        
-        if (name.value == "") {
-        //   check if the name box is empty
-            isInvalid = true;
-        }
-        if (email.value == "") {
-        //   check if the email box is empty
-        isInvalid = true;
-        }
-        if (message.value == "") {
-        //   check if the messge box is empty
-        isInvalid = true;
-        }
-
-        errorText.hidden = !isInvalid;
-        return false;
-    }
-</script>
 </html>
