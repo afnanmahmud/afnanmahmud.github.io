@@ -14,6 +14,12 @@ const __dirname = dirname(__filename);
 var jsonParser = bodyParser.json()
  
 app.use(express.static(__dirname + '/'));
+app.use((req,res,next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    return next();
+  }
+);
 
 app.use(
   bodyParser.json({
