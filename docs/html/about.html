@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html>
+<!-- Importing a font from google -->
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+<style>
+    body {
+        font-family: 'Abel';font-size: 22px;
+    }
+</style>
 
 <head>
     <link rel="stylesheet" href="./../css/style.css">
 </head>
 
 <body>
+
     <ul>
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../html/about.html">About</a></li>
-        <li><a href="../html/contact.html">Contact</a></li>
+        <li class="navbar-item"><a class="navbar-item-atag" href="../html/index.html">Home</a></li>
+        <li class="navbar-item"><a class="navbar-item-atag" href="../html/about.html">About</a></li>
+        <li class="navbar-item"><a class="navbar-item-atag" href="../html/contact.html">Contact</a></li>
     </ul>
-    <div class = "AboutTitle">
+    <div class="titleBanner">
         <h1>About Me</h1>
     </div>
     <div class = "bodyParagraphs">
-        <p>Hello, my name is Afnan Nour and I am a student at Kennesaw State University. My goal is to graduate with a bachelor's degree in Information Technology in Spring of 2025 with a concentration in data analytics.</p>
     </div>
-    <img src="https://i.pinimg.com/564x/8f/c1/3a/8fc13a626aa6c0805c7a914960d2f207.jpg" alt="pixel pink computer" style="float:right;width:100px;height:100px;">
+    
+    <main>
+        <section class="container">
+            <div class="column">
+                <p class="about-me-description">                    
+                    
+                    Afnan Nour is a student at Kennesaw State University and a teacher at ILM Academy. Before going on maternity leave, she spent her time nurturing the minds of middle school and high school students with information about the world around them. Her favorite subject to teach was social studies since it allowed the most room for debates and discussions. Currently, she spends all of her time taking care of her baby girl while continuing her education online. <br><br>
 
+                    “Being a mother is the best thing that has happened to me. It allowed me to appreciate the things I used to take for granted and changed my perspective on a lot of things. It also adds more value to the work I do every day for my classes, I feel like my sense of purpose has been revived.” <br><br>
+
+
+                    Afnan is from Eritrea, a country in the Eastern region of Africa. Even though she was born and raised in Saudi Arabia, she still feels a strong connection to her home country. She grew up in a loving Muslim home. Her parents have a strong influence on her personality. She attributes her smile and kindness to her mother, and her work ethic to her father. Her environment allowed her passion for knowledge and love for school to continue to shine, despite facing so many challenges growing up. Her goal is to continue educating herself, even after graduating in 2025.<br><br>
+
+
+                    “As a student at Kennesaw State University, my passion for learning continues to grow with every semester that I spend here. I enjoy the welcoming environment and the vibrant campus. My classes provide thought-provoking scenarios and assignments that prepare me for my future. The friends that entered my life through KSU make me feel very grateful and proud to be a student here. It is a very big part of my identity and will continue to influence my future!”
+                </p>
+            </div>
+            
+			<div class="column image-container">
+                <img class="my_image" src="./../images/afnan-picture.jpeg" alt="a picture of Afnan with hands under her chin">
+            </div>
+		</section>
+	</main>
+    <img src="https://i.pinimg.com/564x/8f/c1/3a/8fc13a626aa6c0805c7a914960d2f207.jpg" alt="pixel pink computer" style="float:right;width:100px;height:100px;">
 </body>
 
 </html>

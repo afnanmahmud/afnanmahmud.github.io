@@ -4,68 +4,94 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #fcd5ce;
-    font-family: Helvetica;
+    font-family: 'Abel';
+    font-size: 22px;
+
 }
 
+.my_image {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+}
 
-li {
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-me-description {
+    margin: 0;
+    word-spacing: 5px;
+    line-height: 1.5em;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    color:rgb(41, 61, 32);
+
+    
+}
+
+.welcome-page-description {
+    font-family: 'Abel';
+    font-size: 20px;
+}
+
+.navbar-item {
     float: left;
-    font-family: Helvetica;
+    font-family: 'Abel';
+    font-size: 22px;
+
 }
 
-li a {
+.navbar-item-atag {
     display: block;
-    color: rgb(30, 77, 9);
+    color: #3a5a40;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: Helvetica;
+    font-family: 'Abel';
+    font-size: 22px;
+    font-weight: 500;
 }
 
 /* color of text block when hovered over*/
-li a:hover {
+.navbar-item-atag:hover {
     background-color: #ffb5a7;
     color: white;
-    font-family: Helvetica;
 }
 
-.HomeTitle {
+.titleBanner{
     background-color: #fcd5ce;
     opacity: 60%;
     width: 100%;
-    height: 120%;
+    height: 14%;
     text-align: center;
     padding-top: 1px;
-    font-family: Helvetica;
+    font-family: Tahoma;
 }
 
-.AboutTitle {
-    background-color: #fcd5ce;
-    opacity: 60%;
-    width: 100%;
-    height: 120%;
-    text-align: center;
-    padding-top: 1px;
-    font-family: Helvetica;
-}
+
 
 .bodyParagraphs {
     padding-top: 1px;
-    padding-bottom: 1px;
-    font-family: Helvetica;
+    padding-bottom: 1px;    
     background-color: #f8edeb;
+    padding-left: 20px;
+    padding-right: 30px;
     color:rgb(41, 61, 32);
 }
 
 .contactTitle {
-    background-color: #fcd5ce;
-    opacity: 60%;
-    width: 100%;
-    height: 120%;
-    text-align: center;
-    padding-top: 1px;
-    font-family: Helvetica;
+    color:rgb(66, 75, 62);
+    padding-left: 15px;
 }
+
 
 .formTitles {
     background-color: #f8edeb;
@@ -75,8 +101,7 @@ li a:hover {
     height: 120%;
     padding-top: 10px;
     padding-left: 20px;
-    font-family: Helvetica;
-}
+    font-family: 'Abel';}
 
 #message {
     height:200px;
@@ -87,6 +112,39 @@ li a:hover {
 }
 
 #error-text {
-    color: red;
+    color: rgb(148, 41, 41);
     font-family: Helvetica;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+    margin: 0;
+    padding: 1rem;
+    height: 100%;
+}
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 100%;
+}
+  
+.column {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8edeb;
+    flex: 1;
+}
+  
+@media (max-width: 1024px) {
+    .column {
+      width: 100%;
+      flex: auto;
+    }
 }
